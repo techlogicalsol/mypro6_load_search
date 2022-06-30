@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+.myform{
+    
+    justify-content: right;
+    width: 100%;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type=text]{
+    width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+    input[type=text] {
+        width: 100%;
+    }
   }
+
+
+/*Home*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myImg{
+    width: 100%;
+    border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.userProfile{
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.userProfile:hover{
+    cursor: pointer;
 }
+
+.userProfileImg{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 250px;   
+}
+
+.userProfile:hover .userProfileImg{
+    opacity: 1;
+}
+
+.profile_img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.download{   
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Banner*/
+
+.formStyle{
+    display: flex;
+    align-items: center;  
+}
+
+.mybtn{
+    border-radius: 4px;
+    background-color: #e74c3c; 
+}
+
+.mybtn i{
+    color: black;
+    font-size: 18px;    
+}
+
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 99vh;
+}
+
+.text-block{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.text-block p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: white;
+    word-spacing: 4px;
+}
+
+.input{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.formStyle input[type=text]{
+    width: 370px;
+}
+
+.companyInfo{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+
+}
+
+.reload{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+}
+
+.mybtn1{
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.mybtn1 i{
+  
+  animation-name: spin;
+  animation-duration: 500ms; 
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/*NavBar*/
+
+.navbar-brand{
+    color: #ee5253;
+    font-weight: 700;
+    background-color: #ee5253;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+/*Modal*/
+
+.modalBtn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/*detailInfo*/
+
+.infoImg{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+    
+}
+
+.mydescription h1{
+    border-bottom: 4px solid #ddd;
+    width: 30%;
+}
+
+.mydescription p{
+    letter-spacing: 1px;
+}
+
